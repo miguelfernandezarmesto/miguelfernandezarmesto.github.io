@@ -17,119 +17,66 @@ font-family:Arial, Helvetica, sans-serif;
 body{
 background:#0f172a;
 color:white;
-}
-
-header{
 display:flex;
-justify-content:space-between;
+justify-content:center;
 align-items:center;
-padding:25px 60px;
+height:100vh;
+text-align:center;
 }
 
-.logo{
-font-weight:bold;
-font-size:20px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:30px;
-font-size:15px;
-opacity:0.8;
-}
-
-nav a:hover{
-opacity:1;
-}
-
-.hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:80px 60px;
-}
-
-.hero-text{
+.container{
 max-width:500px;
 }
 
-.hero-text h1{
-font-size:48px;
+img.profile{
+width:140px;
+height:140px;
+border-radius:50%;
 margin-bottom:20px;
+border:3px solid white;
 }
 
-.hero-text p{
-color:#cbd5e1;
-margin-bottom:30px;
-line-height:1.5;
-}
-
-.buttons a{
-text-decoration:none;
-padding:14px 22px;
-border-radius:8px;
-margin-right:15px;
-font-weight:bold;
-}
-
-.btn-primary{
-background:#2563eb;
-color:white;
-}
-
-.btn-primary:hover{
-background:#1d4ed8;
-}
-
-.btn-secondary{
-border:1px solid #475569;
-color:white;
-}
-
-.btn-secondary:hover{
-background:#1e293b;
-}
-
-.hero img{
-width:340px;
-border-radius:12px;
-}
-
-.projects{
-padding:60px;
-}
-
-.projects h2{
-margin-bottom:30px;
-font-size:28px;
-}
-
-.project-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:10px;
-}
-
-.card h3{
+h1{
+font-size:36px;
 margin-bottom:10px;
 }
 
-.card p{
+p{
 color:#cbd5e1;
-font-size:14px;
+margin-bottom:25px;
 }
 
-footer{
-text-align:center;
-padding:30px;
-color:#94a3b8;
+a.button{
+display:block;
+background:#2563eb;
+color:white;
+text-decoration:none;
+margin:12px auto;
+padding:14px;
+border-radius:10px;
+width:260px;
+font-weight:bold;
+transition:0.2s;
+}
+
+a.button:hover{
+background:#1d4ed8;
+transform:scale(1.05);
+}
+
+.social{
+margin-top:25px;
+}
+
+.social img{
+width:45px;
+margin:10px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.social img:hover{
+transform:scale(1.2);
 }
 
 </style>
@@ -138,66 +85,31 @@ color:#94a3b8;
 
 <body>
 
-<header>
-<div class="logo">Miguel F. Armesto</div>
+<div class="container">
 
-<nav>
-<a href="#">Inicio</a>
-<a href="#">Proyectos</a>
-<a href="#">Contacto</a>
-</nav>
-</header>
+<img class="profile" src="https://via.placeholder.com/140">
 
-<section class="hero">
+<h1>Miguel Fernández Armesto</h1>
 
-<div class="hero-text">
+<p>Sitio web personal</p>
 
-<h1>Hola, soy Miguel</h1>
+<a class="button" href="https://github.com/miguelfernandezarmesto">GitHub</a>
 
-<p>
-Sitio web personal de Miguel Fernández Armesto.
-Aquí podrás encontrar información sobre mí y mis proyectos.
-</p>
+<a class="button" href="https://www.linkedin.com">LinkedIn</a>
 
-<div class="buttons">
-<a class="btn-primary" href="https://github.com/miguelfernandezarmesto">GitHub</a>
-<a class="btn-secondary" href="https://www.linkedin.com">LinkedIn</a>
-</div>
+<div class="social">
+
+<a href="https://www.facebook.com/profile.php?id=61564522718463" target="_blank">
+<img src="facebook.png">
+</a>
+
+<a href="https://www.instagram.com/miiguel_fdz_" target="_blank">
+<img src="instagram.png">
+</a>
 
 </div>
 
-<img src="https://via.placeholder.com/350">
-
-</section>
-
-<section class="projects">
-
-<h2>Proyectos</h2>
-
-<div class="project-grid">
-
-<div class="card">
-<h3>Proyecto 1</h3>
-<p>Descripción breve de tu proyecto.</p>
 </div>
-
-<div class="card">
-<h3>Proyecto 2</h3>
-<p>Descripción breve de tu proyecto.</p>
-</div>
-
-<div class="card">
-<h3>Proyecto 3</h3>
-<p>Descripción breve de tu proyecto.</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 Miguel Fernández Armesto
-</footer>
 
 </body>
 </html>
