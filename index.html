@@ -21,14 +21,26 @@ color:white;
 
 header{
 display:flex;
-justify-content:center;
+justify-content:space-between;
 align-items:center;
-padding:30px;
+padding:25px 60px;
 }
 
 .logo{
 font-weight:bold;
-font-size:28px;
+font-size:24px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-size:16px;
+opacity:0.8;
+}
+
+nav a:hover{
+opacity:1;
 }
 
 .hero{
@@ -102,6 +114,21 @@ color:#cbd5e1;
 font-size:14px;
 }
 
+.contact{
+padding:60px;
+text-align:center;
+}
+
+.contact h2{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.contact p{
+font-size:18px;
+color:#cbd5e1;
+}
+
 footer{
 text-align:center;
 padding:30px;
@@ -116,6 +143,10 @@ color:#94a3b8;
 
 <header>
 <div class="logo">Miguel Fernández Armesto</div>
+
+<nav>
+<a href="#contacto">Contacto</a>
+</nav>
 </header>
 
 <section class="hero">
@@ -169,6 +200,14 @@ Aquí podrás encontrar información sobre mí y mis proyectos.
 </div>
 
 </div>
+
+</section>
+
+<section class="contact" id="contacto">
+
+<h2>Contacto</h2>
+
+<p>miguel.fernandez.armesto@hotmail.com</p>
 
 </section>
 
