@@ -2,39 +2,48 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Presentación</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - Miguel Fernández Armesto</title>
 
 <style>
 
 body{
-background:white;
-font-family:Arial;
+background:#0f172a;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
-flex-direction:column;
+margin:0;
+}
+
+.container{
+text-align:center;
 }
 
 h1{
+font-size:40px;
 margin-bottom:20px;
 }
 
-p{
+.email{
 font-size:20px;
-margin-bottom:30px;
+color:#cbd5e1;
+margin-bottom:40px;
 }
 
-a{
+.btn{
 text-decoration:none;
 background:#2563eb;
 color:white;
-padding:12px 20px;
+padding:12px 25px;
 border-radius:8px;
 font-weight:bold;
+transition:0.2s;
 }
 
-a:hover{
+.btn:hover{
 background:#1d4ed8;
 }
 
@@ -44,11 +53,17 @@ background:#1d4ed8;
 
 <body>
 
+<div class="container">
+
 <h1>Contacto</h1>
 
-<p>miguel.fernandez.armesto@hotmail.com</p>
+<p class="email">
+miguel.fernandez.armesto@hotmail.com
+</p>
 
-<a href="index.html">Inicio</a>
+<a class="btn" href="index.html">Inicio</a>
+
+</div>
 
 </body>
 </html>
