@@ -3,43 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proyectos</title>
+<title>Experiencia - Miguel Fernández Armesto</title>
 
 <style>
 
 body{
 background:#0f172a;
 color:white;
-font-family:Arial;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
+font-family:Arial, Helvetica, sans-serif;
 margin:0;
-text-align:center;
 }
 
-.container{
-max-width:500px;
+/* NAV */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
 }
 
-h1{
-margin-bottom:20px;
+header h1{
+font-size:28px;
 }
 
-p{
-color:#94a3b8;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
 font-size:18px;
 }
 
-a{
+nav a:hover{
+color:#3b82f6;
+}
+
+/* CONTENIDO */
+
+.container{
+max-width:800px;
+margin:auto;
+padding:40px 20px;
+}
+
+.container h2{
+font-size:40px;
+margin-bottom:40px;
+text-align:center;
+}
+
+/* EXPERIENCIA */
+
+.trabajo{
+border-top:2px solid #3b82f6;
+padding-top:25px;
+margin-top:20px;
+}
+
+.trabajo-header{
+display:flex;
+justify-content:space-between;
+font-weight:bold;
+margin-bottom:10px;
+font-size:18px;
+}
+
+.fecha{
+color:#94a3b8;
+}
+
+.puesto{
+color:white;
+}
+
+.empresa{
+color:#3b82f6;
+font-size:24px;
+margin-bottom:15px;
+}
+
+.trabajo ul{
+color:#cbd5e1;
+line-height:1.8;
+font-size:17px;
+}
+
+/* BOTON */
+
+.btn{
 display:inline-block;
-margin-top:30px;
-padding:12px 25px;
+margin-top:40px;
 background:#2563eb;
 color:white;
-text-decoration:none;
+padding:12px 25px;
 border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+color:#94a3b8;
+margin-top:80px;
 }
 
 </style>
@@ -47,18 +119,45 @@ border-radius:8px;
 
 <body>
 
+<header>
+
+<h1>Miguel Fernández Armesto</h1>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="contacto.html">Contacto</a>
+<a href="proyectos.html">Experiencia</a>
+</nav>
+
+</header>
+
 <div class="container">
 
-<h1>Proyectos</h1>
+<h2>Experiencia laboral</h2>
 
-<p>
-Actualmente estoy desarrollando mis primeros proyectos web.
-Próximamente estarán disponibles en esta sección.
-</p>
+<div class="trabajo">
 
-<a href="index.html">Volver al inicio</a>
+<div class="trabajo-header">
+<span class="fecha">2023 - 2024</span>
+<span class="puesto">Técnico IT</span>
+</div>
+
+<div class="empresa">LogiRAIL</div>
+
+<ul>
+<li>Resolución de incidencias técnicas y soporte a usuarios.</li>
+<li>Mantenimiento y supervisión de sistemas informáticos e infraestructura IT.</li>
+</ul>
 
 </div>
+
+<a class="btn" href="index.html">Volver al inicio</a>
+
+</div>
+
+<footer>
+© 2026 Miguel Fernández Armesto
+</footer>
 
 </body>
 </html>
