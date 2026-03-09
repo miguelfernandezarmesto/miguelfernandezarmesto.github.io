@@ -8,75 +8,103 @@
 <style>
 
 body{
-background:#0f172a;
+background:linear-gradient(135deg,#0f172a,#020617);
 color:white;
 font-family:Arial, Helvetica, sans-serif;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+min-height:100vh;
 margin:0;
 }
 
 .container{
 text-align:center;
-width:350px;
+width:380px;
 }
 
 h1{
 font-size:40px;
-margin-bottom:20px;
+margin-bottom:10px;
 }
 
 .email{
-font-size:20px;
+font-size:18px;
 color:#cbd5e1;
 margin-bottom:30px;
 }
 
-/* formulario */
+/* FORMULARIO */
 
 form{
-margin-top:20px;
 text-align:left;
+background:#020617;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 
 label{
 display:block;
-margin-top:10px;
+margin-top:12px;
 margin-bottom:5px;
+font-size:14px;
+color:#cbd5e1;
 }
 
 input, textarea{
 width:100%;
-padding:10px;
-border-radius:6px;
-border:none;
-margin-bottom:10px;
+padding:12px;
+border-radius:8px;
+border:1px solid #334155;
+background:#0f172a;
+color:white;
+font-size:14px;
+transition:0.2s;
+}
+
+input::placeholder,
+textarea::placeholder{
+color:#64748b;
+}
+
+input:focus,
+textarea:focus{
+outline:none;
+border-color:#3b82f6;
+box-shadow:0 0 0 2px rgba(59,130,246,0.3);
 }
 
 textarea{
 resize:none;
 }
 
+/* BOTON ENVIAR */
+
 button{
 width:100%;
-padding:12px;
-background:#2563eb;
-color:white;
+padding:13px;
+margin-top:15px;
+background:linear-gradient(90deg,#2563eb,#3b82f6);
 border:none;
 border-radius:8px;
+color:white;
+font-size:15px;
 font-weight:bold;
 cursor:pointer;
+transition:0.2s;
 }
 
 button:hover{
-background:#1d4ed8;
+transform:translateY(-2px);
+box-shadow:0 5px 15px rgba(59,130,246,0.4);
 }
+
+/* BOTON INICIO */
 
 .btn{
 display:inline-block;
-margin-top:20px;
+margin-top:25px;
 text-decoration:none;
 background:#2563eb;
 color:white;
@@ -104,21 +132,24 @@ background:#1d4ed8;
 miguel.fernandez.armesto@hotmail.com
 </p>
 
-<form action="https://formspree.io/f/xojkjwyp" method="POST">
+<form action="https://formspree.io/f/abcd1234" method="POST">
 
 <label>Nombre</label>
-<input type="text" name="nombre" required>
+<input type="text" name="nombre" placeholder="Tu nombre" required>
 
 <label>Apellidos</label>
-<input type="text" name="apellidos" required>
+<input type="text" name="apellidos" placeholder="Tus apellidos" required>
+
+<label>Email</label>
+<input type="email" name="email" placeholder="tu@email.com" required>
 
 <label>Teléfono</label>
-<input type="tel" name="telefono">
+<input type="tel" name="telefono" placeholder="Tu teléfono">
 
 <label>Información</label>
-<textarea name="mensaje" rows="4"></textarea>
+<textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
 
-<button type="submit">Enviar</button>
+<button type="submit">Enviar mensaje</button>
 
 </form>
 
