@@ -20,6 +20,7 @@ margin:0;
 
 .container{
 text-align:center;
+width:350px;
 }
 
 h1{
@@ -30,10 +31,52 @@ margin-bottom:20px;
 .email{
 font-size:20px;
 color:#cbd5e1;
-margin-bottom:40px;
+margin-bottom:30px;
+}
+
+/* formulario */
+
+form{
+margin-top:20px;
+text-align:left;
+}
+
+label{
+display:block;
+margin-top:10px;
+margin-bottom:5px;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:none;
+margin-bottom:10px;
+}
+
+textarea{
+resize:none;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#1d4ed8;
 }
 
 .btn{
+display:inline-block;
+margin-top:20px;
 text-decoration:none;
 background:#2563eb;
 color:white;
@@ -60,6 +103,24 @@ background:#1d4ed8;
 <p class="email">
 miguel.fernandez.armesto@hotmail.com
 </p>
+
+<form action="https://formspree.io/f/xojkjwyp" method="POST">
+
+<label>Nombre</label>
+<input type="text" name="nombre" required>
+
+<label>Apellidos</label>
+<input type="text" name="apellidos" required>
+
+<label>Teléfono</label>
+<input type="tel" name="telefono">
+
+<label>Información</label>
+<textarea name="mensaje" rows="4"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
 
 <a class="btn" href="index.html">Inicio</a>
 
