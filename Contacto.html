@@ -11,34 +11,70 @@ body{
 background:linear-gradient(135deg,#0f172a,#020617);
 color:white;
 font-family:Arial, Helvetica, sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
 margin:0;
 }
 
-.container{
-text-align:center;
-width:380px;
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
 }
 
-h1{
-font-size:40px;
-margin-bottom:10px;
+header h1{
+font-size:28px;
+margin:0;
 }
 
 header h1 a{
 color:white;
 text-decoration:none;
 }
-.email{
+
+/* MENU */
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
 font-size:18px;
-color:#cbd5e1;
-margin-bottom:30px;
+}
+
+nav a:hover{
+color:#3b82f6;
+}
+
+nav a.activo{
+color:#3b82f6;
+font-weight:bold;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.main{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:80vh;
 }
 
 /* FORMULARIO */
+
+.container{
+text-align:center;
+width:380px;
+}
+
+.container h1{
+font-size:40px;
+margin-bottom:10px;
+}
 
 form{
 text-align:left;
@@ -123,21 +159,23 @@ background:#1d4ed8;
 }
 
 </style>
-  
- 
+
 </head>
 
 <body>
 
 <header>
 <h1><a href="index.html">Miguel Fernández Armesto</a></h1>
-</header>
 
 <nav>
 <a href="index.html">Inicio</a>
 <a href="experiencia.html">Experiencia</a>
 <a class="activo" href="contacto.html">Contacto</a>
 </nav>
+
+</header>
+
+<div class="main">
 
 <div class="container">
 
@@ -168,7 +206,7 @@ Si quieres contactar conmigo, rellena el formulario y te responderé lo antes po
 
 </form>
 
-<a class="btn" href="index.html">Inicio</a>
+</div>
 
 </div>
 
